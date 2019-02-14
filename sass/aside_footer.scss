@@ -64,6 +64,7 @@ footer {
 	
 #gotop {
 	@include fixB(-4em,93%,1000);
+	display 		: none;
 	font-size		: $max * 1.2;
 	color			: $white;
 	background-color: darken($blue2 , 10%);
