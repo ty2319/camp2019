@@ -10,6 +10,8 @@ $th: 1000px;
 
 $of: 1500px;
 
+$oe: 1800px;
+
 //-------------------------------
 
 
@@ -109,6 +111,12 @@ $ip: '../img/';
   
   @else if $mediaSize <= $of{
     @media all and (max-width: $of) {
+      @content
+    }
+  }
+  
+  @else if $mediaSize <= $oe{
+    @media all and (max-width: $oe) {
       @content
     }
   }

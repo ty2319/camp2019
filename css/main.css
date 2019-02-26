@@ -8,7 +8,7 @@
     height: 100%; }
     .bb-custom-wrapper .bb-bookblock .content h2 {
       position: absolute;
-      top: 40%;
+      top: 35%;
       left: 0;
       z-index: 1000;
       text-align: center;
@@ -16,7 +16,7 @@
       .bb-custom-wrapper .bb-bookblock .content h2 img {
         display: block;
         margin: -5% auto 0 auto;
-        width: 33.3333333333%;
+        width: 28.5714285714%;
         min-width: 200px;
         height: auto; }
     .bb-custom-wrapper .bb-bookblock .content .scroller {
@@ -42,6 +42,9 @@
           font-weight: 300;
           font-size: 100%;
           margin-top: 1em; }
+          @media all and (max-width: 400px) {
+            .bb-custom-wrapper .bb-bookblock .content .scroller header p {
+              margin: 0.5em; } }
       .bb-custom-wrapper .bb-bookblock .content .scroller ul, .bb-custom-wrapper .bb-bookblock .content .scroller dl {
         padding: 7%;
         display: flex;
@@ -120,7 +123,10 @@
               left: 5%;
               width: 90%; } }
           .bb-custom-wrapper .bb-bookblock .content .scroller section > img + p {
-            margin-top: 14.4em; }
+            margin-top: 17em; }
+            @media all and (max-width: 1800px) {
+              .bb-custom-wrapper .bb-bookblock .content .scroller section > img + p {
+                margin-top: 14.4em; } }
             @media all and (max-width: 700px) {
               .bb-custom-wrapper .bb-bookblock .content .scroller section > img + p {
                 margin-top: 21.6em; } }
