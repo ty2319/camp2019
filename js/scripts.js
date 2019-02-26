@@ -24,24 +24,24 @@ $(function() {
 			var h = $(".jspDrag").position().top;
 		
 			if (h > 100) {
-				$('#gotop').stop().animate({'bottom': 60}, 200);
+				$('#gotop').stop().animate({'bottom': 60}, 200).show();
 				
 				$('#menu-toc a').click(function() {
-					$('#gotop').stop().animate({bottom : -60} , 200);
+					$('#gotop').stop().animate({bottom : -60} , 200).hide();
 				});
 				
 				$('.bb-custom-wrapper').mouseup(function() {
-					$('#gotop').stop().animate({bottom : -60} , 200);
+					$('#gotop').stop().animate({bottom : -60} , 200).hide();
 				});
 			} else {
-				$('#gotop').stop().animate({'bottom': -60}, 200);
+				$('#gotop').stop().animate({'bottom': -60}, 200).hide();
 			}
 			
 		});
 	
 		$('#gotop').click(function(){
 			$(".jspPane,.jspDrag").stop().animate({'top' : 0}, 500, "swing");
-			$('#gotop').stop().animate({'bottom': '-50px'}, 200);
+			$('#gotop').stop().animate({'bottom': '-60'}, 200).hide();
 		});
 	});
 		

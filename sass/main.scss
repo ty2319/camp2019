@@ -14,14 +14,14 @@
 		.content {
 			  
 			h2  {
-				@include abT(50%,0,1000);
+				@include abT(35%,0,1000);
 				text-align	: center;
 				width		: $max;
 				
 				img {
 				  display	: block;
 				  margin	: -$max/20 auto 0 auto;
-				  width		: $max / 2.5;
+				  width		: $max / 3.5;
 				  min-width : 200px;
 				  height	: auto;
 				}
@@ -55,6 +55,10 @@
 						font-weight : 300;
 						font-size	: $max;
 						margin-top	: 1em;
+						
+						@include media($f) {
+							margin: 0.5em;
+						}
 					}
             	}
 				
@@ -165,8 +169,12 @@
 						}
 						
 						&+ p {
-							margin-top: 14.4em;						
-					
+							margin-top: 17em;
+						
+							@include media($oe) {
+								margin-top: 14.4em;
+							}
+							
 							@include media($s) {
 								margin-top: 21.6em;
 							}					
